@@ -16,7 +16,6 @@ let default_bot = {
     h: 20
 }
 let right_key_pressed = false
-let enter_key_pressed = false
 
 //-------------------------DRAW-FUNCTION----------------------------------
 
@@ -41,10 +40,7 @@ function draw() {
 //-------------------------KEY-HANDLING-FUNCTIONS-----------------------------
 
 function keys_condition_execute() {
-    if (enter_key_pressed) {
-        alert("ENTER")
-    }
-    else if (right_key_pressed) {
+    if (right_key_pressed) {
         draw()
     }
 }
@@ -52,14 +48,7 @@ document.addEventListener("keydown", function onEvent(event) {
     if (event.key === "ArrowRight") {
         right_key_pressed = true
         keys_condition_execute();
-
     }
-    else if (event.key === "Enter") {
-        enter_key_pressed = true
-        keys_condition_execute();
-
-    }
-
 });
 
 
