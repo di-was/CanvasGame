@@ -4,16 +4,18 @@
 
 //-----------------------------VARIABLES---------------------------------------------
 
-var canvas = (document.querySelector('#canvas'))
+var canvas = document.querySelector('#canvas')
+canvas.width = window.innerWidth / 2
+canvas.height = window.innerHeight / 2
 let c = canvas.getContext('2d')
 
 let default_bot = {
     speedX: 2,
     speedY: 2,
-    x: 10,
-    y: 10,
-    w: 20,
-    h: 20
+    x: canvas.width - (canvas.width-10),
+    y: canvas.height/2,
+    w: 50,
+    h: 50
 }
 let right_key_pressed = false
 
