@@ -15,6 +15,7 @@ let default_bot = {
     w: 20,
     h: 20
 }
+
 let right_key_pressed = false
 let enter_key_pressed = false
 
