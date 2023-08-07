@@ -24,7 +24,7 @@ function animate_mario() {
 
     }
     marioswy.textContent = `X position:  ${mario.x}`
-    mariowy.textContent = `y position:  ${mario.y}`
+    mariowy.textContent = `X position:  ${mario.y}`
 }
 
 animate_mario()
