@@ -2,7 +2,7 @@ let mario = {
     x: 20,
     w: 20,
     h: 40, 
-    y: canvas.height - 40, 
+    y: 321 - 40, 
     speedX: 0,
     speedY: 10,
     dx: 4,
