@@ -20,12 +20,12 @@ function animate_mario() {
 
     if (mario.y + mario.h + mario.speedY >= canvas.height)
      {
-        mario.speedY = 0;
-    }
-    else {
-
+        mario.speedY = 0
+        mario.y += mario.speedY
         mario.speedY += gravity
-
+    } else
+    {
+        mario.speedY = 0
     }
     //ADDED FOR DEBUGGING DONT REMOVE
     marioswy.textContent = `X position:  ${mario.x}`
