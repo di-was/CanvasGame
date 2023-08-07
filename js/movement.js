@@ -23,8 +23,8 @@ function animate_mario() {
         mario.speedY += gravity
 
     }
-    marioswy.textContent = `speed X:  ${mario.speedX}`
-    mariowy.textContent = `Y position:  ${mario.y}`
+    marioswy.textContent = `Y position:  ${mario.x}`
+    mariowy.textContent = `X position:  ${mario.y}`
 }
 
 animate_mario()
