@@ -1,9 +1,13 @@
 import { c } from "./main.js"
 import mario from "./player.js"
 import { gravity } from "./gravity.js"
-//debug
+//-----------------------------------------------------
+// THESE ARE ADDED FOR DEBUG
+// DONT REMOVE THEM
 let marioswy = document.querySelector('#mariosy')
 let mariowy = document.querySelector('#marioy')
+
+//-----------------------------------------------------
 
 function animate_mario() {
     
@@ -23,6 +27,7 @@ function animate_mario() {
         mario.speedY += gravity
 
     }
+    //ADDED FOR DEBUGGING DONT REMOVE
     marioswy.textContent = `X position:  ${mario.x}`
     mariowy.textContent = `Y position:  ${mario.y}`
 }
