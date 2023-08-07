@@ -16,7 +16,7 @@ function animate_mario() {
     c.fillRect(mario.x, mario.y, mario.w, mario.h)
 
     mario.x += mario.speedX
-    if (mario.y + mario.h  < canvas.height) {
+    if (mario.y + mario.h  <= canvas.height) {
         mario.y += mario.speedY
         mario.speedY += gravity
     } else {
