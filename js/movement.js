@@ -11,6 +11,7 @@ let mariowy = document.querySelector('#marioy')
 
 function animate_mario() {
     
+    requestAnimationFrame(animate_mario)
     c.clearRect(0, 0, canvas.width, canvas.height)
 
     c.fillRect(mario.x, mario.y, mario.w, mario.h)
@@ -26,7 +27,6 @@ function animate_mario() {
     //ADDED FOR DEBUGGING DONT REMOVE
     marioswy.textContent = `X position:  ${mario.x}`
     mariowy.textContent = `Y position:  ${mario.y}`
-    requestAnimationFrame(animate_mario)
 }
 
 animate_mario()
