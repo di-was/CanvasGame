@@ -20,11 +20,12 @@ document.addEventListener("keyup", (event) => {
 })
 //UP DOWN FUCNTIONS
 document.addEventListener("keydown", (event) => {
-if (event.key === "ArrowUp") 
-{
-    mario.speedY = mario.dy
-}
-})
+    if (event.key === "ArrowUp" && mario.onGround && mario.canJump) {
+        mario.speedY = mario.dy
+        mario.onGround = false
+        mario.canJump = false 
+    }
+});
 
 document.addEventListener("keyup", (event) => {
     if (event.key === "ArrowUp") {
