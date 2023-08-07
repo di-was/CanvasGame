@@ -8,6 +8,8 @@ let mario = {
     dx: 4,
     dy: -7,
     color: "black",
+    canJump: true,
+    onGround: true,
 }
 
 
