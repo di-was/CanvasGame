@@ -11,6 +11,9 @@ body {
 }
 
 canvas{
-    margin: auto;
-    display: flex;
+margin: 2% auto;
+display: flex;
+}
+#debug{
+    text-align: center;
 }

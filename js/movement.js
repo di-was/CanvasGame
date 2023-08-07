@@ -1,6 +1,10 @@
 import { c } from "./main.js"
 import mario from "./player.js"
 import { gravity } from "./gravity.js"
+//debug
+let marioswy = document.querySelector('#mariosy')
+let mariowy = document.querySelector('#marioy')
+
 function animate_mario() {
     
     c.clearRect(0, 0, canvas.width, canvas.height)
@@ -19,6 +23,9 @@ function animate_mario() {
         mario.speedY += gravity
 
     }
+    marioswy.textContent = `speed X:  ${mario.speedX}`
+    mariowy.textContent = `Y position:  ${mario.y}`
 }
+
 animate_mario()
 export default animate_mario
