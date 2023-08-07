@@ -16,16 +16,12 @@ function animate_mario() {
     c.fillRect(mario.x, mario.y, mario.w, mario.h)
 
     mario.x += mario.speedX
-    mario.y += mario.speedY
-
-    if (mario.y + mario.h + mario.speedY >= canvas.height)
-     {
-        mario.speedY = 0
+    if (mario.y + mario.h + groundThreshold < canvas.height) {
         mario.y += mario.speedY
         mario.speedY += gravity
-    } else
-    {
+    } else {
         mario.speedY = 0
+        mario.y = canvas.height - mario.h
     }
     //ADDED FOR DEBUGGING DONT REMOVE
     marioswy.textContent = `X position:  ${mario.x}`
