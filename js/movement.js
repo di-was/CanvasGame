@@ -27,9 +27,9 @@ else {
     mario.onGround = true 
     mario.y = canvas.height - mario.h
     mario.speedY = 0;
-    marioswy.textContent = `X position:  ${mario.x}`
-}
     //ADDED FOR DEBUGGING DONT REMOVE
+    marioswy.textContent = `X position works:  ${mario.x}`
+}
     requestAnimationFrame(animate_mario)
 }
 

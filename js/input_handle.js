@@ -22,13 +22,16 @@ document.addEventListener("keyup", (event) => {
 document.addEventListener("keydown", (event) => {
     if (event.key === "ArrowUp" && mario.onGround && mario.canJump) {
         mario.speedY = mario.dy
-        mario.onGround = false
-        mario.canJump = false 
+        mario.onGround = true
+        mario.canJump = true 
+        
     }
 });
 
 document.addEventListener("keyup", (event) => {
     if (event.key === "ArrowUp") {
         mario.speedY = 0
+        mario.onGround = false
+        mario.canJump = false 
     }
 })
