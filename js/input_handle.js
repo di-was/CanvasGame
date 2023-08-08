@@ -18,12 +18,21 @@ document.addEventListener("keyup", (event) => {
         mario.speedX = 0
     }
 })
+
+//ADDED FOR DEBUGGING DONT REMOVE
+let aupcount = 0
+let aup = document.querySelector('#aup')
+
 //UP DOWN FUCNTIONS
 document.addEventListener("keydown", (event) => {
     if (event.key === "ArrowUp" && mario.onGround && mario.canJump) {
+        //FOR DEBUG
+        aupcount++
+        aup.textContent = `Arrow key count :${aupcount}`
+        //-------------------------------------------------------
         mario.speedY = mario.dy
         mario.onGround = false
-        mario.canJump = false 
+        mario.canJump = false
     }
 });
 
