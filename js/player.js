@@ -2,7 +2,6 @@ let mario = {
     x: 20,
     w: 20,
     h: 40, 
-    y: 321 - 40, 
     speedX: 0,
     speedY: 10,
     dx: 4,
@@ -11,6 +10,6 @@ let mario = {
     canJump: true,
     onGround: true,
 }
-
-
-export default mario
+//DYNAMIC DECLARATION 
+mario.y = canvas.height-mario.h;
+export default mario;
